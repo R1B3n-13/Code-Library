@@ -1,10 +1,10 @@
 /**
  * Author: Tard1grad3 (sabn1999@gmail.com)
- * Created: Monday, 31st October 2022 5:28:51 am (+6)
+ * Created: Monday, 31st October 2022 5:55:18 am (+6)
 **/
 
-#include    <bits/stdc++.h>
-using       namespace               std;
+#include <bits/stdc++.h>
+using namespace std;
 
 const int sz = 6e7;
 
