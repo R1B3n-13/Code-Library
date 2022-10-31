@@ -1,7 +1,18 @@
+/**
+ * Author: Tard1grad3 (sabn1999@gmail.com)
+ * Created: Monday, 31st October 2022 7:43:43 am (+6)
+**/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 vector<int> v, seg;
+
+void initsegTree(int n)
+{
+    v.assign(n, 0);
+    seg.assign(4 * n, 0);
+}
 
 void build(int id, int lo, int hi)
 {
@@ -10,12 +21,6 @@ void build(int id, int lo, int hi)
     build(lc, lo, mid);
     build(rc, mid + 1, hi);
     seg[id] = max(seg[lc], seg[rc]);
-}
-
-void initsegTree(int n)
-{
-    v.assign(n, 0);
-    seg.assign(4 * n, 0);
 }
 
 int query(int id, int lo, int hi, int l, int r)
